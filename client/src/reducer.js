@@ -38,7 +38,7 @@ const reducer = (state, action) => {
     const fullIngr = [];
     const measurements = [];
 
-    //gives me an array of full ingredients discarding empty values
+    //gives me an array of full ingredients & measurements discarding empty values
     for (let ingr in action.payload) {
       if (ingr.includes("strIngredient") && action.payload[ingr] !== "") {
         fullIngr.push(action.payload[ingr]);
