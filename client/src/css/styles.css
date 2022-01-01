@@ -1,0 +1,156 @@
+/* Utilities */
+
+:root {
+  --primary-color: #845ec2;
+  --secondary-color: #4e8397;
+  --light-grey: #d5cabd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.btn {
+  display: block;
+  padding: 15px 25px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: top;
+  gap: 20px;
+  height: 100%;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+/*  */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.error {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Search */
+
+.search {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.search form {
+  margin: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+}
+
+.search input {
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  margin: 14px;
+  width: 60%;
+  border: 2px solid var(--secondary-color);
+}
+
+.search input:focus {
+  outline: none;
+  border: 2px solid #845ec2;
+}
+
+/* Meal */
+.meal {
+  margin: 1.5rem;
+  padding: 15px;
+  margin-bottom: 3rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+}
+.meal button {
+  font-size: 1.5rem;
+  height: 90px;
+}
+
+.meal-snap h1 {
+  margin-bottom: 1rem;
+}
+.meal-snap img {
+  width: 100%;
+}
+
+/* Ingredients */
+.ingredients {
+  background: var(--light-grey);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.ingredient-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 0.6rem;
+}
+
+.measurement {
+  color: var(--primary-color);
+}
+
+/* Directions */
+.directions h1 {
+  margin-bottom: 1rem;
+}
+
+/* Media */
+@media only screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search input {
+    width: 115%;
+  }
+}

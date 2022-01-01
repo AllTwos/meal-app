@@ -3,6 +3,8 @@ const app = express();
 const axios = require("axios");
 const cors = require("cors");
 
+require("dotenv").config();
+
 app.use(cors()); //avoid browser shenaynays
 app.use(express.json()); //telling express to read json
 
@@ -15,7 +17,7 @@ const mealFetch = async (endpoint, params) => {
     params: { i: params },
     headers: {
       "x-rapidapi-host": "themealdb.p.rapidapi.com",
-      "x-rapidapi-key": "512890c351msh297ca543355b06cp15cccbjsn1461259a5ccb",
+      "x-rapidapi-key": process.env.API_KEY,
     },
   };
 
