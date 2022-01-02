@@ -21,9 +21,9 @@ const AppProvider = ({ children }) => {
     try {
       let location = window.location.href;
       if (location.includes("localhost")) {
-        location = "http://localhost:5000";
+        location = "http://localhost:5000/";
       }
-      const response = await fetch(`${location}/api/meal`, {
+      const response = await fetch(`${location}api/meal`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
