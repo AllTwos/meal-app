@@ -6,15 +6,14 @@ function Search() {
   return (
     <section className="search">
       <form className="search-form" onSubmit={handleSubmit}>
-        <h1>This Will Be Dinner Today!</h1>
+        <h1>Type Your Ingredient(s) In!</h1>
         <input
           onChange={handleSearch}
           name="search"
           type="text"
           value={search}
-          placeholder="use commas with no spaces for multi ingredients"
+          placeholder="use commas, no spaces"
         />
-        <small></small>
         <button className="btn" type="submit">
           Find my dinner
         </button>

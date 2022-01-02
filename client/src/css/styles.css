@@ -157,17 +157,25 @@ a {
 }
 
 /* Media */
-@media only screen and (max-width: 900px) {
+@media (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;
   }
 
   .search input {
-    width: 115%;
+    width: 80%;
+    margin: 18px;
+  }
+
+  .search h1 {
+    font-size: 2.7rem;
   }
 
   .meal a {
     text-align: center;
-    width: 37%;
+    width: 55%;
+  }
+  .container {
+    padding: 0px;
   }
 }
