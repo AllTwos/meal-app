@@ -167,6 +167,10 @@ a {
     margin: 18px;
   }
 
+  .search button {
+    margin-bottom: 1.2rem;
+  }
+
   .search h1 {
     font-size: 2.7rem;
   }
