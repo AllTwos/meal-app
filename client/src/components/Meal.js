@@ -31,6 +31,13 @@ function Meal() {
         <div className="directions mt-2">
           <h1>Directions</h1>
           <p>{mealInfo.strInstructions}</p>
+          <a
+            className="btn mt-1"
+            target="_blank"
+            href={mealInfo.strYoutube ? mealInfo.strYoutube : "#"}
+          >
+            Youtube
+          </a>
         </div>
       )}
     </section>

@@ -27,6 +27,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -42,6 +43,9 @@
   height: 100%;
 }
 
+.mt-1 {
+  margin-top: 1rem;
+}
 .mt-2 {
   margin-top: 2rem;
 }
@@ -55,6 +59,10 @@ body {
 
 h1 {
   font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .error {
@@ -112,6 +120,10 @@ h1 {
   height: 90px;
 }
 
+.meal a {
+  width: 10%;
+}
+
 .meal-snap h1 {
   margin-bottom: 1rem;
 }
@@ -152,5 +164,10 @@ h1 {
 
   .search input {
     width: 115%;
+  }
+
+  .meal a {
+    text-align: center;
+    width: 37%;
   }
 }
