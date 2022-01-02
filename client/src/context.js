@@ -1,5 +1,4 @@
 import React, { useContext, useReducer, useEffect } from "react";
-
 import reducer from "./reducer";
 
 const AppContext = React.createContext();
@@ -20,7 +19,11 @@ const AppProvider = ({ children }) => {
 
   const fetchInfo = async (endpoint, params) => {
     try {
-      const response = await fetch("/api/meal", {
+      let location = window.location.href;
+      if (location.includes("localhost")) {
+        location = "http://localhost:5000";
+      }
+      const response = await fetch(`${location}/api/meal`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
