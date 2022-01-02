@@ -10,9 +10,9 @@ require("dotenv").config();
 app.use(cors()); //avoid browser shenaynays
 app.use(express.json()); //telling express to read json
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static('../client/build'));
-// }
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("./client/build"));
+}
 
 //Func
 const mealFetch = async (endpoint, params) => {
