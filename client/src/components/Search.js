@@ -12,7 +12,7 @@ function Search() {
           name="search"
           type="text"
           value={search}
-          placeholder="use commas, no spaces"
+          placeholder="no space after commas"
         />
         <button className="btn" type="submit">
           Find my dinner
