@@ -20,7 +20,7 @@ const AppProvider = ({ children }) => {
 
   const fetchInfo = async (endpoint, params) => {
     try {
-      const response = await fetch("http://localhost:5000/api/meal", {
+      const response = await fetch("/api/meal", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
