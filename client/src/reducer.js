@@ -15,6 +15,7 @@ const reducer = (state, action) => {
       measurements: [],
       mealInfo: {},
       error: true,
+      ingrButton: false,
     };
   }
 
