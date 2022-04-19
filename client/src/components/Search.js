@@ -7,6 +7,10 @@ function Search() {
     <section className="search">
       <form className="search-form" onSubmit={handleSubmit}>
         <h1>Type Your Ingredient(s) In!</h1>
+        <small style={{ margin: "0.7rem", color: "grey" }}>
+          *Not operational. If you're trying to use this, tell me to add api
+          key.
+        </small>
         <input
           onChange={handleSearch}
           name="search"
